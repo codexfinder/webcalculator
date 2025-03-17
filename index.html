@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Calculator</title>
+</head>
+<body>
+    <div>
+        <h2>Factorial Calculator</h2>
+        <input type="number" id="factorialInput" />
+        <button onclick="calculateFactorial()">Calculate Factorial</button>
+        <p id="factorialResult"></p>
+    </div>
+
+    <div>
+        <h2>FizzBuzz Calculator</h2>
+        <input type="number" id="fizzBuzzInput" />
+        <button onclick="calculateFizzBuzz()">Calculate FizzBuzz</button>
+        <p id="fizzBuzzResult"></p>
+    </div>
+
+    <div>
+        <h2>Fibonacci Calculator</h2>
+        <input type="number" id="fibonacciInput" />
+        <button onclick="calculateFibonacci()">Calculate Fibonacci</button>
+        <p id="fibonacciResult"></p>
+    </div>
+
+    <script type="module" src="fakultet.js"></script>
+    <script type="module" src="fizzbuzz.js"></script>
+    <script type="module" src="fibonacci.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
