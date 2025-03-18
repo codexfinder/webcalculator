@@ -2,27 +2,67 @@
 <html>
 <head>
     <title>Web Calculator</title>
+    <style>
+        .calculator-box {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 400px;
+        }
+        .result-box {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            min-height: 50px;
+        }
+        input[type="number"] {
+            padding: 5px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <div>
+    <div class="calculator-box">
         <h2>Factorial Calculator</h2>
         <input type="number" id="factorialInput" />
         <button onclick="calculateFactorial()">Calculate Factorial</button>
-        <p id="factorialResult"></p>
+        <div class="result-box">
+            <p>Result: <span id="factorialResult"></span></p>
+            <p>Step by step: <span id="factorialSteps"></span></p>
+        </div>
     </div>
 
-    <div>
+    <div class="calculator-box">
         <h2>FizzBuzz Calculator</h2>
         <input type="number" id="fizzBuzzInput" />
         <button onclick="calculateFizzBuzz()">Calculate FizzBuzz</button>
-        <p id="fizzBuzzResult"></p>
+        <div class="result-box">
+            <p>Result: <span id="fizzBuzzResult"></span></p>
+            <p>Sequence: <span id="fizzBuzzSequence"></span></p>
+        </div>
     </div>
 
-    <div>
+    <div class="calculator-box">
         <h2>Fibonacci Calculator</h2>
         <input type="number" id="fibonacciInput" />
         <button onclick="calculateFibonacci()">Calculate Fibonacci</button>
-        <p id="fibonacciResult"></p>
+        <div class="result-box">
+            <p>Result: <span id="fibonacciResult"></span></p>
+            <p>Sequence: <span id="fibonacciSequence"></span></p>
+        </div>
     </div>
 
     <script type="module" src="fakultet.js"></script>
